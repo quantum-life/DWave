@@ -1,5 +1,5 @@
 DWAVE_SAPI_URL = 'https://cloud.dwavesys.com/sapi'
-DWAVE_TOKEN = 'DEV-7c86da7d5e80b59ef47d1a76f9a99a4a924654bf'
+DWAVE_TOKEN = 'DEV-'
 DWAVE_SOLVER = 'DW_2000Q_2_1'
 
 # Import networkx for graph tools
@@ -21,7 +21,6 @@ sampler = EmbeddingComposite(DWaveSampler())
 G = nx.Graph()
 
 # Add edges to graph - this also adds the nodes
-#G.add_edges_from([(1, 2), (1, 3), (2, 3), (3, 4), (3, 5), (4, 5), (4, 6), (5, 6), (6, 7)])
 G.add_edges_from([(1, 6), (1, 5), (2, 3), (3, 4), (3, 8), (4, 8), (4, 6), (5, 6), (6, 10)])
 
 # Find the maximum independent set, S
